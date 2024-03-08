@@ -4,15 +4,23 @@ public class Actividad_7 {
 
         int[] primos = calculos.calcularPrimos();
         System.out.println("Números primos:");
-        for (int primo : primos) {
-            System.out.print(primo + ", ");
+        for (int i = 0; i < primos.length; i++) {
+            if (i < primos.length - 1) {
+                System.out.print(primos[i] + ", ");
+            } else {
+                System.out.print(primos[i] + ".");
+            }
         }
         System.out.println("\n");
 
         int[] fibonacci = calculos.calcularFibonacci();
         System.out.println("Sucesión de Fibonacci:");
-        for (int fibo : fibonacci) {
-            System.out.print(fibo + ", ");
+        for (int i = 0; i < fibonacci.length; i++) {
+            if (i < fibonacci.length - 1) {
+                System.out.print(fibonacci[i] + ", ");
+            } else {
+                System.out.print(fibonacci[i] + ".");
+            }
         }
     }
 }
